@@ -1,0 +1,18 @@
+// $Id: inputExpressionGenerator.mpc 378 2015-05-01 22:09:38Z hillj $
+
+project (inputExpressionGenerator) {
+specific (make) {
+    requires += cpp11
+    compile_flags += -std=c++11
+  }
+  exename = inputExpressionGenerator
+  install = .
+ 
+  Source_Files {
+	driver.cpp
+	Input_Generator.cpp
+ }
+
+  Template_Files {
+  }
+}

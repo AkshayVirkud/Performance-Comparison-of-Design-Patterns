@@ -1,0 +1,54 @@
+// $Id: assignment5.mpc 378 2015-05-01 22:09:38Z hillj $
+
+project (assignment5) {
+specific (make) {
+    requires += cpp11
+    compile_flags += -std=c++11
+  }
+  exename = assignment5
+  install = .
+ 
+  Source_Files {
+    	driver.cpp
+	Addition_Node.cpp
+	Division_Node.cpp
+	Modulus_Node.cpp
+	Multiplication_Node.cpp
+	Number_Node.cpp
+	Subtraction_Node.cpp
+	Expr_Node.cpp
+	Binary_Expr_Node.cpp
+	Expr_Node_Visitor.cpp
+	Expr_Node_Factory.cpp
+	Expr_Builder.cpp
+	Tree_Expr_Node_Factory.cpp
+	Expr_Tree_Builder.cpp
+	Eval_Expr_Tree.cpp
+	Unary_Expr_Node.cpp
+	ClosedParanthesis_Node.cpp
+	OpenParanthesis_Node.cpp
+	Add_Command.cpp
+	ClosedParanthesis_Command.cpp
+	Divide_Command.cpp
+	Expr_Command_Factory.cpp
+	Modulus_Command.cpp
+	Multiply_Command.cpp
+	Number_Command.cpp
+	OpenParanthesis_Command.cpp
+	Stack_Expr_Command_Factory.cpp
+	Subtract_Command.cpp
+	Expr_Command.cpp
+	Binary_Op_Command.cpp
+	Flyweight_Expr_Command_Factory.cpp
+	Expr_Evaluator_Strategy.cpp
+	ExprTree_Evaluator_Strategy.cpp
+	Postfix_Evaluator_Strategy.cpp
+	Postfix_Flyweight_Evaluator_Strategy.cpp
+	Postfix_Flyweight_Performance_Evaluator_Strategy.cpp
+ }
+
+  Template_Files {
+	Stack.cpp
+	Array.cpp
+  }
+}
